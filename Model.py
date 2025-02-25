@@ -3,7 +3,6 @@ import streamlit as st
 import pickle
 
 loaded_model = pickle.load(open ('trained_model.sav', 'rb'))
-#Creating a function for Prediction
 def heartdisease_prediction (input_data):
         # changing the input data to a numpy array
         Array_data= np.asarray(input_data)
